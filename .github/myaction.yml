@@ -1,0 +1,13 @@
+name : Event Workflow 
+on: 
+  push:
+    branches:
+      - "master"
+
+jobs:
+  job1:
+    name: First Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Custom 1
+        run: echo "Hellow world!"
